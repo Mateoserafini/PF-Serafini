@@ -1,0 +1,25 @@
+@import "variables";
+
+    header {
+        display: flex;
+        background-color: $fondoHeader;
+        h1{
+          font-family: 'Amatic SC', cursive;
+        }
+    
+        img {
+          display: inline;
+          height: 80px;
+        }
+    
+        div {
+          display: inline;
+          
+          button {
+            display: inline;
+          }
+          .fondoNav{
+            background-color: $fondoHeader !important;
+          }
+        }
+    }
