@@ -12,6 +12,7 @@ $colorFuente: #171717;
 
 @mixin imgStyle{
     .tamImg{
+        max-width: 600px;
         img{
           width: 100%;
           border-radius: 10px;
