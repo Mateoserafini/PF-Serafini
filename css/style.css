@@ -63,6 +63,7 @@ main {
   height: 600px;
   width: 100%;
   border-radius: 20px;
+  z-index: 2;
 }
 .sectionIndex img {
   width: 0px;
@@ -78,6 +79,32 @@ main {
   filter: contrast(120%);
 }
 
+.sectionIndex1 {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .sectionIndex {
+    display: none;
+  }
+  .sectionIndex1 {
+    display: inline;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .sectionIndex1 .elemetos {
+    flex: 1 0 auto;
+    width: 180px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .sectionIndex1 .elemetos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+}
 .divConten {
   background-color: rgba(209, 193, 169, 0.5019607843);
   border-radius: 20px;
@@ -111,7 +138,7 @@ form .button2 {
   transition: all 0.6s ease;
 }
 form .button2:hover {
-  background-color: #bd9c80;
+  background-color: #8ebd80;
   cursor: pointer;
 }
 form .button2 svg {
@@ -127,6 +154,33 @@ form .button2:hover svg {
 form .text2 {
   padding-right: 1.7rem;
 }
+form .button3 {
+  background-color: #756a6a;
+  color: #e8e9e5;
+  width: 8.5em;
+  height: 2.9em;
+  border: #705542 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+form .button3:hover {
+  background-color: #bd8480;
+  cursor: pointer;
+}
+form .button3 svg {
+  width: 1.6em;
+  margin: -0.1em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+form .button3:hover svg {
+  transform: translateX(5px);
+}
+form .text3 {
+  padding-right: 1.7rem;
+}
 
 .gallery {
   margin: 1em;
@@ -137,6 +191,7 @@ form .text2 {
   max-width: 100%;
   margin-bottom: 0.5em;
   display: inline-block;
+  border-radius: 5px;
 }
 
 footer {

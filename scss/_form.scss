@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables" , "mixin";
 
 form{
     @include fondoContenido;
@@ -13,7 +13,7 @@ form{
         transition: all 0.6s ease;
     }
     .button2:hover {
-        background-color: #bd9c80;
+        background-color: #8ebd80;
         cursor: pointer;
       }
       
@@ -30,6 +30,36 @@ form{
       }
       
       .text2 {
+        padding-right: 1.7rem;
+      }
+      .button3 {
+        background-color: $fondoBoton ;
+        color: $fondoBody;
+        width: 8.5em;
+        height: 2.9em;
+        border: $fondoHeader 0.2em solid;
+        border-radius: 11px;
+        text-align: right;
+        transition: all 0.6s ease;
+    }
+    .button3:hover {
+        background-color: #bd8480;
+        cursor: pointer;
+      }
+      
+      .button3 svg {
+        width: 1.6em;
+        margin: -0.1em 0.8em 1em;
+        position: absolute;
+        display: flex;
+        transition: all 0.6s ease;
+      }
+      
+      .button3:hover svg {
+        transform: translateX(5px);
+      }
+      
+      .text3 {
         padding-right: 1.7rem;
       }
 }

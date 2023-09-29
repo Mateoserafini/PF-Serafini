@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables", "mixin";
 
 .divConten{
     @include fondoContenido;
